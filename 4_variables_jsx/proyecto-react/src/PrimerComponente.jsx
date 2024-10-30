@@ -1,5 +1,3 @@
-import React from 'react'
-
 // Declarar las variables fuera de la función que define al componente
 const string = 'Esto es un texto'
 const number = 123456

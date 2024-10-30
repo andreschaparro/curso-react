@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const PrimerComponente = () => {
     return (
         // El fragment permite que un componente tenga mas de un elemento HTML

@@ -1,4 +1,3 @@
-import React from 'react'
 // CSS para el componente
 import './styles/PrimerComponente.css'
 
