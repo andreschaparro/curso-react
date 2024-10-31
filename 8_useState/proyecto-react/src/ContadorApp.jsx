@@ -5,6 +5,7 @@ import { useState } from "react"
 
 export const ContadorApp = ({ value }) => {
 
+    // Ingresar useS y seleccionar useStateSnippet
     // Se crea la variable
     // Se indica el nombre de la función para modificarla
     // Se le asigna el valor por defecto
