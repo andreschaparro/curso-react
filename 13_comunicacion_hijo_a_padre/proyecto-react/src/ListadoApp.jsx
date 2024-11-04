@@ -31,10 +31,10 @@ export const ListadoApp = () => {
         // Eliminamos espacios en blanco al principio y final
         const value = val.trim()
 
-        // Si no se ingresó ningúna tarea, no se agrega una línea vacía a la lista desordenada
+        // Si no se ingresó ningúna tarea, no agrega una línea vacía en la lista
         if (value < 1) return
 
-        // Se garantiza que la clave id tenga un valor númerico incremental y único
+        // Se garantiza que la clave id tenga un valor númerico único al ser incremental
         const envio = {
             id: arreglo.length,
             nombre: value,
