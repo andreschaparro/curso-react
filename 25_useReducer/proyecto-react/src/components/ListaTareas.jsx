@@ -2,7 +2,7 @@ import { useReducer } from "react"
 import { useForm } from "../hooks/useForm"
 
 const initialState = [{
-    // con new Date.getDate() no se va a repetir el id
+    // con new Date.getTime() no se va a repetir el id
     id: new Date().getTime(),
     tarea: 'Explicar Reducers',
     finalizada: false
