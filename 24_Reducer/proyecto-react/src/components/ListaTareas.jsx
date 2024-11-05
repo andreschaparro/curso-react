@@ -21,24 +21,6 @@ const tareaEditada = {
     finalizada: true
 }
 
-const agregarTarea = {
-    type: '[TAREAS] Agregar Tarea',
-    payload: tareaNueva
-}
-
-const editarTarea = {
-    type: '[TAREAS] Editar Tarea',
-    payload: tareaEditada
-}
-
-const eliminarTarea = {
-    type: '[TAREAS] Eliminar Tarea',
-}
-
-const borrarTareas = {
-    type: '[TAREAS] Borrar Tareas',
-}
-
 const tareaReducer = (state = initialState, action = {}) => {
     switch (action.type) {
         case '[TAREAS] Agregar Tarea':
@@ -57,6 +39,24 @@ const tareaReducer = (state = initialState, action = {}) => {
             return state;
             break
     }
+}
+
+const agregarTarea = {
+    type: '[TAREAS] Agregar Tarea',
+    payload: tareaNueva
+}
+
+const editarTarea = {
+    type: '[TAREAS] Editar Tarea',
+    payload: tareaEditada
+}
+
+const eliminarTarea = {
+    type: '[TAREAS] Eliminar Tarea',
+}
+
+const borrarTareas = {
+    type: '[TAREAS] Borrar Tareas',
 }
 
 console.log(tareaReducer(initialState, agregarTarea))
