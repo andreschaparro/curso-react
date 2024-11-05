@@ -18,7 +18,8 @@ export const UserList = ({ endpoint }) => {
         }
     }
 
-    // El Hook useEffect permite que algo se ejecute al cargar la página y que vuelva a ejecutarse solo si se modifica un elemento del Array de dependencias 
+    // Ingresar useE y seleccionar useEffectSnippet
+    // El Hook useEffect permite que algo se ejecute al cargar la página y que vuelva a ejecutarse solo si se modifica un elemento del Array de dependencias
     useEffect(() => {
         fetchData()
     }, [endpoint])
