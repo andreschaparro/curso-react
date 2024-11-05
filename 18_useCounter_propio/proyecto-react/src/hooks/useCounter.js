@@ -25,6 +25,6 @@ export const useCounter = (initialValue = 0) => {
         counter,
         increment,
         reset,
-        decrement,
+        decrement
     }
 }

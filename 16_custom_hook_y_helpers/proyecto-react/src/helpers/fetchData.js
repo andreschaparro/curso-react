@@ -6,7 +6,7 @@ export const fetchData = async (endpoint) => {
         const data = await response.json()
         console.log(data)
         return {
-            data: data,
+            data,
             isLoading: false,
         }
     } catch (error) {
