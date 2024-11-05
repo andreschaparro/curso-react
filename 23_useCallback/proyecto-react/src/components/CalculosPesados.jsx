@@ -10,10 +10,6 @@ export const CalculosPesados = () => {
         console.log(listaNumeros)
     }
 
-    // getCalculo simula una función costosa en términos de tiempo y recursos
-    // Cada vez que se presiona el primer button se redibuja el componente completo y vuelve a ejecutarse getCalculo de forma innecesaria
-    // Ingresar useM y seleccionar useMemoSnippet
-    // useMemo memoriza el resultado de getCalculo y solo vuelve a ejecutarla si se modificó listaNumeros con el segundo button
     const getCalculo = (listaNumeros) => useMemo(() => {
         console.log('Calculando...')
         return listaNumeros.reduce((a, b) => a * b)
