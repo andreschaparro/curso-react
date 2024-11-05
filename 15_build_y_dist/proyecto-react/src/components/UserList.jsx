@@ -6,11 +6,14 @@ export const UserList = ({ endpoint }) => {
 
     const [data, setData] = useState([])
 
-    // La función de flecha debe ser del tipo async para poder utilizar await
     const fetchData = async () => {
         try {
             const response = await fetch(baseUrl + endpoint)
             const data = await response.json()
+            // El console.log se ejecuta dos veces en desarrollo debido al StrictMode
+            // En producción se ejecuta solo una vez
+            // Ejecutar npm run build para generar la carpeta dist con los archivos de producción
+            // https://react-jsonplaceholder-dist.netlify.app/
             console.log(data)
             setData(data)
         } catch (error) {
@@ -18,13 +21,11 @@ export const UserList = ({ endpoint }) => {
         }
     }
 
-    // El Hook useEffect permite que algo se ejecute al cargar la página y que vuelva a ejecutarse solo si se modifica un elemento del Array de dependencias 
     useEffect(() => {
         fetchData()
     }, [endpoint])
 
     return (
-        // Se muestra un contenido para el endpoint users y otro para comments
         <>
             <ul>
                 {endpoint == 'users' ? data.map(item => <li key={item.id}>{item.name}</li>)
