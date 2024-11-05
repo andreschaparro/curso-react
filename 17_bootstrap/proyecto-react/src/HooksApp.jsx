@@ -1,5 +1,3 @@
-// Copiar el CDN de https://getbootstrap.com/
-
 export const HooksApp = () => {
     return (
         <>
