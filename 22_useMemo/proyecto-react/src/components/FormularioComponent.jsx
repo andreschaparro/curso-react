@@ -2,8 +2,6 @@ import { useRef, useEffect } from "react"
 import { useForm } from "../hooks/useForm"
 
 export const FormularioComponent = () => {
-    // Ingresar useR y seleccionar useRefSnippet
-    // useRef sirve para guardar una referencia al DOM y luego hacer algo
     const focusRef = useRef()
 
     const initialForm = {
@@ -19,7 +17,6 @@ export const FormularioComponent = () => {
     }
 
     useEffect(() => {
-        // Se hace focus sobre el elemento referenciado al cargar la página 
         focusRef.current.focus()
     }, [])
 
