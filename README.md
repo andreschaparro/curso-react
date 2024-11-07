@@ -6,8 +6,6 @@
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/).
 - [git-scm](https://git-scm.com/).
 - [Node.js (LTS)](https://nodejs.org/en).
-- [Postman](https://www.postman.com/downloads/).
-- [MongoDB Compass](https://www.mongodb.com/try/download/compass).
 
 ## Hojas de ayuda
 
