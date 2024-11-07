@@ -16,7 +16,7 @@
 ## Personalizar Visual Studio Code
 
 1. Clic en `File>Preferences>Profile>New Profile`.
-2. Ingresar `javascript` en `Profile name`.
+2. Ingresar `frontend` en `Profile name`.
 3. Clic en `Create`.
 
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
