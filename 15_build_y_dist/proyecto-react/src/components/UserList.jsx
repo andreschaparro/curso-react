@@ -13,7 +13,6 @@ export const UserList = ({ endpoint }) => {
             // El console.log se ejecuta dos veces en desarrollo debido al StrictMode
             // En producción se ejecuta solo una vez
             // Ejecutar npm run build para generar la carpeta dist con los archivos de producción
-            // https://react-jsonplaceholder-dist.netlify.app/
             console.log(data)
             setData(data)
         } catch (error) {
